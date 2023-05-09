@@ -1,4 +1,4 @@
-# Prova-On-line-Programa-o-de-solu-es-computacionais
+# Prova-Online-Programação-de-soluçoes-computacionais
 Prova Una
 feita por aluno Vitor Emanuel Pereira da Silva 
 RA: 323112102
