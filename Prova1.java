@@ -35,11 +35,12 @@ public class Prova1 {
 
         double totalCombustivel = consumo60 + consumo80 + consumo100 + consumo120 + consumo140;
 
-        double velocidadeMediaPonderada = (km60 + km80 + km100 + km120 + km140) * valorLitro;
+        double distanciaTotal = km60 + km80 + km100 + km120 + km140;
+
+        double velocidadeMediaPonderada = (km60 * 60 + km80 * 80 + km100 * 100
+                + km120 * 120 + km140 * 140) / distanciaTotal;
 
         double custoTotal = totalCombustivel * valorLitro;
-
-        double volocidadetotal = velocidadeMediaPonderada / 5;
 
         System.out.println("Placa do veículo: " + placa);
 
@@ -47,7 +48,7 @@ public class Prova1 {
 
         System.out.printf("Valor total: R$%,.2f%n", custoTotal);
 
-        System.out.printf("Velocidade média ponderada: %.4f km/h%n", volocidadetotal);
+        System.out.printf("Velocidade média ponderada: %.4f km/h%n", velocidadeMediaPonderada);
 
         input.close();
     }
